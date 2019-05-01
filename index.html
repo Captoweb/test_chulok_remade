@@ -1,0 +1,15 @@
+
+INSERT INTO `employees` (`id`, `name`, `family`, `patronymic`, `gender`, `salary`, `department`) 
+
+VALUES (NULL, 'Саидахмад ', 'Ташмухамедов', 'Рашидович', 'муж', '27500', '2'), 
+(NULL, 'Ходжиакбар', 'Шейхзаде ', 'Исламович', 'муж', '26900', '1'), 
+(NULL, 'Сарвар', 'Абдуллаханов ', 'Алимджанович', 'муж', '26900', '2'), 
+(NULL, 'Тулепберген', 'Каипбергенов ', 'Каипбергенович', 'муж', '26900', '3');
+
+
+
+
+$sql = "DELETE FROM movies WHERE filmID =  :filmID";
+$stmt = $pdo->prepare($sql);
+$stmt->bindParam(':filmID', $_POST['filmID'], PDO::PARAM_INT);   
+$stmt->execute();

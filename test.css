@@ -1,0 +1,58 @@
+body{
+    background: #ddd;
+}
+
+td{
+    border-bottom: 1px solid black;
+    padding: 8px 12px;
+    border-left: 1px solid black; //вертикальный бордер
+    border-right: 1px solid black; 
+}
+
+tr:nth-child(2n) {
+     background: white;
+}
+
+table{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-collapse: collapse; //убирает не нужную толщину бордера
+    width: 100%;
+}
+
+thead{
+    background: #b1b1b1;
+}
+
+.block {
+	border: 2px solid  #ccc;
+    border-radius: 6px;
+    padding:  4%;
+    margin-top: 8%;
+    background: #F1F1F1;
+}
+body{
+	//margin: 0 3%;
+	font-weight: 400;
+    background: #d8d8d8;
+}
+
+.hid{
+	visibility: hidden;
+}
+h1,h2{
+   text-align: center; 
+}
+
+p .gray{
+   background: #a8a8a8; 
+   margin-right: 5px;//кнопка
+}
+
+.bottom{ 
+margin-bottom: 2rem;
+ }
+label{
+    font-size: 1.8rem;
+}
